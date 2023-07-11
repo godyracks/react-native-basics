@@ -6,6 +6,7 @@ import { View,
 
  } from 'react-native'
  import  Flatlist1  from './components/Flatlist1'
+import Flatlist2 from './components/Flatlist2'
 
 export default function App() {
   return (
@@ -16,7 +17,12 @@ export default function App() {
       <Text>App</Text>
       <View>
         < Flatlist1 />
+        
       </View>
+      <View>
+        < Flatlist2 />
+      </View>
+
     </View>
     </SafeAreaView>
   )
