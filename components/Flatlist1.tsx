@@ -3,7 +3,10 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native';
 
 const Flatlist = () => {
   return (
+    <View>
+      <Text style={styles.headText}>Flat Cards</Text>
     <ScrollView horizontal>
+      
       <View style={styles.container}>
         <View style={[styles.card, styles.blueCard]}>
           <Text style={styles.headText}>FlatList</Text>
@@ -16,6 +19,7 @@ const Flatlist = () => {
         </View>
       </View>
     </ScrollView>
+    </View>
   );
 };
 
@@ -23,7 +27,7 @@ const styles = StyleSheet.create({
   headText: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#25be8a',
   },
   container: {
     flexDirection: 'row',
@@ -32,12 +36,13 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: '#fff',
-    height: 300,
-    width: 300,
+    height: 200,
+    width: 200,
     borderRadius: 6,
     marginHorizontal: 10,
     justifyContent: 'center',
     alignItems: 'center',
+    color: '#171717'
   },
   blueCard: {
     backgroundColor: '#2596be',

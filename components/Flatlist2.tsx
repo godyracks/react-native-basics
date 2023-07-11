@@ -8,11 +8,12 @@ const Flatlist2 = () => {
     { id: '3', text: 'Item 3' },
   ];
 
-  const renderItem = ({ item }) => (
+  const renderItem = ({ item }: { item: { text: string } }) => (
     <View style={[styles.card, styles.blueCard]}>
       <Text style={styles.headText}>{item.text}</Text>
     </View>
   );
+  
 
   return (
     <FlatList
