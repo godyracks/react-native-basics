@@ -22,6 +22,8 @@ export default function App() {
         {/* < Flatlist2 /> */}
         <ElevatedCards />
         <FancyCard/>
+        <FancyCard/>
+        <FancyCard/>
       </ScrollView>
    
     </SafeAreaView>

@@ -3,8 +3,10 @@ import React from 'react';
 
 const FancyCard = () => {
   return (
+    <View>
+    <Text style={styles.headingTitle}>Popular Destinations</Text>
     <View style={styles.container}>
-      <Text style={styles.headingTitle}>Popular Destinations</Text>
+      
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
@@ -14,9 +16,16 @@ const FancyCard = () => {
           }}
         />
       </View>
+      <Text style={styles.cardTitle}>
+        The Amazon
+      </Text>
       <Text style={styles.infoText}>
         Discover the most popular destinations around the world.
       </Text>
+      <Text style={styles.cardFooter}>
+        2 mins ago.
+      </Text>
+    </View>
     </View>
   );
 };
@@ -25,7 +34,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
     borderRadius: 10,
-    padding: 20,
+    padding: 0,
     margin: 10,
     shadowColor: '#000',
     shadowOffset: {
@@ -47,8 +56,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   image: {
-    width: 350,
-    height: 200,
+    width: 390,
+    height: 250,
     borderRadius: 10,
   },
   infoText: {
@@ -56,5 +65,19 @@ const styles = StyleSheet.create({
     color: '#666',
     lineHeight: 24,
   },
+  cardTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#666',
+    lineHeight: 24,
+  },
+  cardFooter: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#666',
+    lineHeight: 24,
+  },
 });
+
+
 export default FancyCard
